@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  @apply bg-bg text-white antialiased;
+}
+
+/* Smooth scroll for anchored navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+.container-max {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00E5FF 0%, #00FF9C 50%, #9D4EDD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+}
+
+.btn-primary {
+  @apply relative inline-flex items-center justify-center rounded-xl bg-accent-blue/10 text-accent-blue hover:bg-accent-blue/20 border border-accent-blue/30 px-5 py-3 font-semibold transition shadow-glow outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
+}
+
+.btn-secondary {
+  @apply relative inline-flex items-center justify-center rounded-xl bg-accent-green/10 text-accent-green hover:bg-accent-green/20 border border-accent-green/30 px-5 py-3 font-semibold transition outline-none focus-visible:ring-2 focus-visible:ring-accent-green focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
+}
+
+.card {
+  @apply rounded-2xl bg-surface/60 border border-white/10 backdrop-blur-md shadow-xl;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.section-heading {
+  @apply text-3xl md:text-5xl font-extrabold tracking-tight;
+}
+
+.subtext {
+  @apply text-white/70;
+}
